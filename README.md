@@ -1,14 +1,35 @@
-# Getting Started with GitHub Copilot
+# Mergington High School Activities API
 
-<img src="https://octodex.github.com/images/Professortocat_v2.png" align="right" height="200px" />
+A simple FastAPI-based API for managing extracurricular activities at a high school.
 
-Hey nikhilbajaj12!
+This project provides endpoints to view current activities and sign up students for these activities. It uses an in-memory data store, meaning all data resets when the server restarts.
 
-Mona here. I'm done preparing your exercise. Hope you enjoy! 💚
+## Setup / Installation
 
-Remember, it's self-paced so feel free to take a break! ☕️
+Install dependencies from `requirements.txt`:
 
-[![](https://img.shields.io/badge/Go%20to%20Exercise-%E2%86%92-1f883d?style=for-the-badge&logo=github&labelColor=197935)](https://github.com/nikhilbajaj12/parellel_agent/issues/1)
+```
+pip install -r requirements.txt
+```
+
+## Usage
+
+Run the application using Uvicorn from the `src` directory:
+
+```
+cd src
+uvicorn app:app --reload
+```
+
+Open your browser and navigate to `http://localhost:8000/docs` to access the interactive API documentation.
+
+
+## Project Structure
+
+- `src/app.py`: Main FastAPI application.
+- `src/static/`: Static files served by the API.
+- `requirements.txt`: Project dependencies.
+- `pytest.ini`: Pytest configuration file.
 
 ---
 
