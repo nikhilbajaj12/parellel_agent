@@ -19,6 +19,11 @@ current_dir = Path(__file__).parent
 app.mount("/static", StaticFiles(directory=os.path.join(Path(__file__).parent,
           "static")), name="static")
 
+def add_two_numbers(a: int, b: int) -> int:
+    """Returns the sum of a and b."""
+    return a + b
+
+
 # In-memory activity database
 activities = {
     "Chess Club": {
