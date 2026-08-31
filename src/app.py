@@ -42,6 +42,10 @@ activities = {
 }
 
 
+def add_two_numbers(a: int, b: int) -> int:
+    """Return the sum of a and b."""
+
+
 @app.get("/")
 def root():
     return RedirectResponse(url="/static/index.html")
