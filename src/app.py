@@ -65,3 +65,8 @@ def signup_for_activity(activity_name: str, email: str):
     # Add student
     activity["participants"].append(email)
     return {"message": f"Signed up {email} for {activity_name}"}
+
+def add_two_numbers(a: int, b: int) -> int:
+    """Add two numbers and return the sum."""
+    return a + b
+
