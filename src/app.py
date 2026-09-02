@@ -14,6 +14,11 @@ from pathlib import Path
 app = FastAPI(title="Mergington High School API",
               description="API for viewing and signing up for extracurricular activities")
 
+
+def add_two_numbers(a: int, b: int) -> int:
+    """Return the sum of two integers a and b."""
+    return a + b
+
 # Mount the static files directory
 current_dir = Path(__file__).parent
 app.mount("/static", StaticFiles(directory=os.path.join(Path(__file__).parent,
