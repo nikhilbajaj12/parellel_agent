@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
           <h4>${name}</h4>
           <p>${details.description}</p>
           <p><strong>Schedule:</strong> ${details.schedule}</p>
-          <p><strong>Availability:</strong> ${spotsLeft} spots left</p>
+          <p><strong>Signups:</strong> ${details.participants.length} / ${details.max_participants} spots filled</p>
         `;
 
         activitiesList.appendChild(activityCard);
